@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-label="FPV racing quad flying through neon gates">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#050812"/>
+    <stop offset=".45" stop-color="#0a1530"/>
+    <stop offset="1" stop-color="#061018"/>
+  </linearGradient>
+  <linearGradient id="cyan" x1="0" x2="1"><stop stop-color="#3ff5ff"/><stop offset="1" stop-color="#4d79ff"/></linearGradient>
+  <linearGradient id="mag" x1="0" x2="1"><stop stop-color="#ff3fd2"/><stop offset="1" stop-color="#ff6b6b"/></linearGradient>
+  <filter id="glowC"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000" flood-opacity=".55"/></filter>
+  <clipPath id="r"><rect width="1200" height="340" rx="28"/></clipPath>
+</defs>
+<g clip-path="url(#r)">
+  <rect width="1200" height="340" fill="url(#bg)"/>
+
+  <!-- speed streaks -->
+  <g stroke-linecap="round" opacity=".55">
+    <path d="M0 82 L325 120" stroke="#2ecfe0" stroke-width="3"><animate attributeName="x2" values="325;520;325" dur="2.6s" repeatCount="indefinite"/></path>
+    <path d="M0 116 L280 137" stroke="#665cff" stroke-width="2"/>
+    <path d="M0 255 L350 226" stroke="#ff48cb" stroke-width="3"/>
+    <path d="M0 288 L290 250" stroke="#ff7c7c" stroke-width="2"/>
+    <path d="M960 46 L1200 15" stroke="#4be6ff" stroke-width="2"/>
+    <path d="M1000 294 L1200 328" stroke="#ff4ed2" stroke-width="2"/>
+  </g>
+
+  <!-- racing gates in perspective -->
+  <g fill="none" filter="url(#glowC)">
+    <path d="M880 58 L1110 76 L1092 273 L858 251 Z" stroke="url(#mag)" stroke-width="11" opacity=".9"/>
+    <path d="M720 86 L852 96 L843 225 L708 213 Z" stroke="url(#cyan)" stroke-width="8" opacity=".82"/>
+    <path d="M612 111 L692 116 L687 198 L605 192 Z" stroke="url(#mag)" stroke-width="6" opacity=".68"/>
+  </g>
+
+  <!-- floor course -->
+  <path d="M590 340 L690 198 L843 225 L1092 273 L1200 340 Z" fill="#07141f" opacity=".9"/>
+  <path d="M668 340 L728 227" stroke="#24dce8" stroke-width="3" opacity=".45"/>
+  <path d="M880 340 L865 247" stroke="#ff46c7" stroke-width="3" opacity=".42"/>
+
+  <!-- FPV racing quad, banked -->
+  <g transform="translate(390 174) rotate(-14)" filter="url(#shadow)">
+    <!-- carbon X frame -->
+    <g fill="#10151b" stroke="#4b535c" stroke-width="3">
+      <path d="M-34-15 L-128-72 L-114-92 L-18-36 Z"/>
+      <path d="M34-15 L128-72 L114-92 L18-36 Z"/>
+      <path d="M-34 15 L-128 72 L-114 92 L-18 36 Z"/>
+      <path d="M34 15 L128 72 L114 92 L18 36 Z"/>
+    </g>
+
+    <!-- motors -->
+    <g fill="#242b33" stroke="#7a8791" stroke-width="3">
+      <circle cx="-124" cy="-82" r="16"/><circle cx="124" cy="-82" r="16"/>
+      <circle cx="-124" cy="82" r="16"/><circle cx="124" cy="82" r="16"/>
+    </g>
+
+    <!-- props -->
+    <g fill="none" stroke-linecap="round" opacity=".88">
+      <ellipse cx="-124" cy="-82" rx="58" ry="14" stroke="#57f4ff" stroke-width="5">
+        <animateTransform attributeName="transform" type="rotate" from="0 -124 -82" to="360 -124 -82" dur=".42s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="124" cy="-82" rx="58" ry="14" stroke="#ff58d7" stroke-width="5">
+        <animateTransform attributeName="transform" type="rotate" from="0 124 -82" to="-360 124 -82" dur=".42s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="-124" cy="82" rx="58" ry="14" stroke="#ff58d7" stroke-width="5">
+        <animateTransform attributeName="transform" type="rotate" from="0 -124 82" to="-360 -124 82" dur=".42s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="124" cy="82" rx="58" ry="14" stroke="#57f4ff" stroke-width="5">
+        <animateTransform attributeName="transform" type="rotate" from="0 124 82" to="360 124 82" dur=".42s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+
+    <!-- body stack -->
+    <rect x="-52" y="-34" width="104" height="68" rx="14" fill="#171d24" stroke="#67737e" stroke-width="3"/>
+    <rect x="-38" y="-22" width="76" height="18" rx="6" fill="#272f38"/>
+    <rect x="-30" y="-51" width="60" height="23" rx="7" fill="#252c34" stroke="#697580" stroke-width="2"/>
+
+    <!-- top battery -->
+    <rect x="-40" y="-70" width="80" height="22" rx="6" fill="#3a3f45" stroke="#8b949e" stroke-width="2"/>
+    <path d="M-20-59 H18" stroke="#efb13d" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- FPV camera -->
+    <path d="M42 -20 L74 -13 L74 13 L42 20 Z" fill="#20262d" stroke="#697580" stroke-width="2"/>
+    <circle cx="70" cy="0" r="9" fill="#090c10" stroke="#46eaf5" stroke-width="3"/>
+    <circle cx="70" cy="0" r="3" fill="#83fbff"/>
+
+    <!-- antenna -->
+    <path d="M-28-48 C-42-72-48-90-43-104 M28-48 C43-72 47-89 42-104" fill="none" stroke="#d9dfe5" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="-43" cy="-106" r="4" fill="#ff4ed3"/><circle cx="42" cy="-106" r="4" fill="#55eaff"/>
+
+    <animateTransform attributeName="transform" additive="sum" type="translate" values="0 0;8 -5;0 0" dur="2.2s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- trail -->
+  <g fill="none" stroke-linecap="round" opacity=".5">
+    <path d="M125 185 C190 175 238 181 285 194" stroke="#56ebff" stroke-width="5" stroke-dasharray="20 14">
+      <animate attributeName="stroke-dashoffset" values="0;-68" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M115 210 C190 198 240 205 300 222" stroke="#ff4ecb" stroke-width="4" stroke-dasharray="18 12">
+      <animate attributeName="stroke-dashoffset" values="0;-60" dur="1.3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <text x="70" y="74" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="34" font-weight="700" fill="#f5f7fb" letter-spacing="2">FPV DRONE RACING</text>
+  <text x="72" y="102" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#70dfea" letter-spacing="3">SEE · DECIDE · COMMIT · FLY</text>
+</g>
+</svg>

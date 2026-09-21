@@ -85,6 +85,18 @@
 
 <div align="center">
 
+### 🌊 GitHub in motion
+
+<img src="./profile-3d-contrib/profile-season-animate.svg" width="100%" alt="Animated 3D contribution landscape">
+
+<sub>把提交记录变成一小片会生长的风景。</sub>
+
+</div>
+
+---
+
+<div align="center">
+
 ### 🌌 Still exploring.
 
 也许未来还没有一个标准答案。  

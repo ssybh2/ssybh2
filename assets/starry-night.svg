@@ -51,16 +51,13 @@
   <!-- moving sky currents -->
   <g fill="none" stroke-linecap="round" filter="url(#oil)">
     <path d="M-80 96 C88 24 251 33 373 80 C508 132 636 127 760 76 C892 22 1043 28 1270 105"
-          stroke="url(#blueBrush)" stroke-width="15" stroke-dasharray="34 18" opacity=".9">
-      <animate attributeName="stroke-dashoffset" values="0;-104" dur="13s" repeatCount="indefinite"/>
+          stroke="url(#blueBrush)" stroke-width="15" opacity=".9">
     </path>
     <path d="M-70 151 C92 94 238 99 365 138 C497 178 641 184 773 142 C919 95 1061 102 1260 158"
-          stroke="#72aefa" stroke-width="8" stroke-dasharray="19 15" opacity=".6">
-      <animate attributeName="stroke-dashoffset" values="0;68" dur="10s" repeatCount="indefinite"/>
+          stroke="#72aefa" stroke-width="8" opacity=".6">
     </path>
     <path d="M20 226 C178 185 300 186 425 215 C561 247 690 250 820 216 C960 179 1080 182 1220 224"
-          stroke="#173f83" stroke-width="17" stroke-dasharray="42 22" opacity=".75">
-      <animate attributeName="stroke-dashoffset" values="0;-128" dur="18s" repeatCount="indefinite"/>
+          stroke="#173f83" stroke-width="17" opacity=".75">
     </path>
   </g>
 
@@ -72,7 +69,7 @@
       <path d="M-91 13 C-62-31 9-46 57-17 C101 9 92 61 52 77 C17 91-21 72-26 43"
             stroke="#9ac8ff" stroke-width="5" opacity=".7"/>
     </g>
-    <animateTransform attributeName="transform" additive="sum" type="rotate" values="0;5;0;-4;0" dur="14s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 0 0" to="360 0 0" dur="52s" repeatCount="indefinite"/>
   </g>
 
   <g transform="translate(655 112)" filter="url(#oil)">
@@ -82,22 +79,29 @@
       <path d="M-87 3 C-55-31 5-41 48-17 C87 6 88 49 55 69 C24 88-12 75-24 47"
             stroke="#84bbff" stroke-width="5" opacity=".62"/>
     </g>
-    <animateTransform attributeName="transform" additive="sum" type="rotate" values="0;-4;0;5;0" dur="17s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 0 0" to="-360 0 0" dur="64s" repeatCount="indefinite"/>
   </g>
 
   <!-- moon and golden ring strokes -->
   <circle cx="1015" cy="82" r="78" fill="url(#moonGlow)" filter="url(#softGlow)">
     <animate attributeName="r" values="76;84;76" dur="6s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="1015" cy="82" r="20" fill="#ffe78a"/>
+  <g transform="translate(1015 82)">
+    <circle r="20" fill="#ffe78a"/>
+    <g opacity=".42">
+      <ellipse cx="-6" cy="-3" rx="5" ry="3.5" fill="#d9aa47"/>
+      <ellipse cx="7" cy="5" rx="3.5" ry="2.4" fill="#efc95e"/>
+      <ellipse cx="4" cy="-8" rx="2.8" ry="2" fill="#c99234"/>
+      <path d="M-13 8 C-4 13 7 12 14 6" fill="none" stroke="#f7d46e" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 0 0" to="360 0 0" dur="84s" repeatCount="indefinite"/>
+  </g>
   <g transform="translate(1015 82)" fill="none" stroke="url(#goldBrush)" stroke-linecap="round" filter="url(#oil)">
-    <path d="M-58 6 C-43-31-12-49 22-43 C55-37 75-8 68 23 C61 53 33 69 7 64" stroke-width="8" stroke-dasharray="26 12">
-      <animate attributeName="stroke-dashoffset" values="0;-76" dur="9s" repeatCount="indefinite"/>
+    <path d="M-58 6 C-43-31-12-49 22-43 C55-37 75-8 68 23 C61 53 33 69 7 64" stroke-width="8">
     </path>
-    <path d="M-71-11 C-50-50-5-72 37-58" stroke-width="4" opacity=".65" stroke-dasharray="12 10">
-      <animate attributeName="stroke-dashoffset" values="0;44" dur="7s" repeatCount="indefinite"/>
+    <path d="M-71-11 C-50-50-5-72 37-58" stroke-width="4" opacity=".65">
     </path>
-    <animateTransform attributeName="transform" additive="sum" type="rotate" values="0;360" dur="42s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 0 0" to="360 0 0" dur="72s" repeatCount="indefinite"/>
   </g>
 
   <!-- stars -->

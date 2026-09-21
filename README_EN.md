@@ -13,7 +13,7 @@ but keeps building, testing, learning, and flying along the way.
 
 [**中文**](./README.md) · [**English**](./README_EN.md)
 
-<img src="./assets/ocean-current.svg" width="100%" alt="Animated ocean current">
+<img src="./assets/paint-particles.svg" width="100%" alt="Animated painterly particles">
 
 </div>
 

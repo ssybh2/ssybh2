@@ -1,69 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 150" role="img" aria-label="Hi, I'm Teddy">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 118" role="img" aria-label="Hi, I'm Teddy">
   <defs>
-    <linearGradient id="nameGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#79d7ff">
-        <animate attributeName="stop-color" values="#79d7ff;#f2c86b;#ff8fb8;#79d7ff" dur="10s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="48%" stop-color="#f4e4a2">
-        <animate attributeName="stop-color" values="#f4e4a2;#9de5ff;#f6c66d;#f4e4a2" dur="10s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#ff8fb8">
-        <animate attributeName="stop-color" values="#ff8fb8;#7fd8ff;#f0bd63;#ff8fb8" dur="10s" repeatCount="indefinite"/>
-      </stop>
+    <linearGradient id="teddy" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#67D8FF"/>
+      <stop offset="48%" stop-color="#F4D06F"/>
+      <stop offset="100%" stop-color="#FF9BC2"/>
     </linearGradient>
-    <linearGradient id="brush" x1="0" x2="1">
-      <stop offset="0" stop-color="#4dc9ff"/>
-      <stop offset=".55" stop-color="#f1c45c"/>
-      <stop offset="1" stop-color="#ff79a9"/>
+    <linearGradient id="underline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#67D8FF"/>
+      <stop offset="55%" stop-color="#F4D06F"/>
+      <stop offset="100%" stop-color="#FF9BC2"/>
     </linearGradient>
-    <filter id="softGlow" x="-30%" y="-50%" width="160%" height="220%">
-      <feGaussianBlur stdDeviation="3.2" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="glow" x="-40%" y="-80%" width="180%" height="260%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <mask id="shineMask">
+      <rect width="900" height="118" fill="white"/>
+    </mask>
   </defs>
 
-  <g transform="translate(450 75)">
-    <text x="-300" y="-8"
-          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-          font-size="30"
-          font-weight="600"
-          letter-spacing="4.5"
-          fill="#9fb4d7">Hi, I'm</text>
+  <!-- direct, readable one-line title -->
+  <g transform="translate(450 63)" text-anchor="middle">
+    <text x="-92" y="0"
+          font-family="Inter, Arial, Helvetica, sans-serif"
+          font-size="54"
+          font-weight="800"
+          letter-spacing="0.5"
+          fill="#F4F7FB">Hi, I'm</text>
 
-    <text x="-75" y="7"
-          font-family="Georgia, 'Times New Roman', serif"
-          font-size="74"
-          font-style="italic"
-          font-weight="700"
-          letter-spacing="1.2"
-          fill="url(#nameGradient)"
-          filter="url(#softGlow)">Teddy</text>
+    <text x="116" y="0"
+          font-family="Inter, Arial, Helvetica, sans-serif"
+          font-size="60"
+          font-weight="900"
+          letter-spacing="0.8"
+          fill="url(#teddy)"
+          filter="url(#glow)">Teddy</text>
 
-    <path d="M-77 27 C6 42 105 41 188 24"
+    <!-- clear accent underline -->
+    <path d="M34 19 C93 27 158 27 219 18"
           fill="none"
-          stroke="url(#brush)"
+          stroke="url(#underline)"
           stroke-width="5"
-          stroke-linecap="round"
-          opacity=".92">
+          stroke-linecap="round">
       <animate attributeName="d"
-               values="M-77 27 C6 42 105 41 188 24;
-                       M-77 30 C10 48 106 34 188 27;
-                       M-77 27 C6 42 105 41 188 24"
-               dur="6.5s"
+               values="M34 19 C93 27 158 27 219 18;
+                       M34 19 C93 23 158 31 219 18;
+                       M34 19 C93 27 158 27 219 18"
+               dur="5.8s"
                repeatCount="indefinite"/>
     </path>
 
-    <g transform="translate(218 -28)" fill="#ffd976" stroke="#ffe7a8" stroke-linecap="round" filter="url(#softGlow)">
-      <circle r="4.5"/>
-      <path d="M0-14V14M-14 0H14M-9-9L9 9M9-9L-9 9" stroke-width="2.2"/>
-      <animateTransform attributeName="transform" additive="sum" type="scale" values=".82;1.16;.82" dur="2.8s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values=".55;1;.55" dur="2.8s" repeatCount="indefinite"/>
-    </g>
-
-    <g transform="translate(256 8)" fill="#80dfff" opacity=".85">
-      <circle r="3.2">
-        <animate attributeName="r" values="2.2;4.2;2.2" dur="3.6s" repeatCount="indefinite"/>
-      </circle>
+    <!-- small wave/spark, kept secondary -->
+    <g transform="translate(258 -13)" stroke="#F4D06F" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#glow)">
+      <path d="M0 -11 V11 M-11 0 H11"/>
+      <circle r="3.5" fill="#F4D06F" stroke="none"/>
+      <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 0 0" to="360 0 0" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".65;1;.65" dur="2.6s" repeatCount="indefinite"/>
     </g>
   </g>
+
+  <!-- subtle moving highlight over Teddy only -->
+  <rect x="-120" y="20" width="70" height="70" rx="20" fill="#ffffff" opacity=".10" transform="skewX(-16)">
+    <animate attributeName="x" values="-120;910" dur="6.8s" repeatCount="indefinite"/>
+  </rect>
 </svg>

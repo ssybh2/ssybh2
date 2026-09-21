@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="Animated ocean and beach banner">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#071a2b"/>
+      <stop offset=".56" stop-color="#123a55"/>
+      <stop offset="1" stop-color="#38a7b7"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1598ad"/>
+      <stop offset=".45" stop-color="#08758c"/>
+      <stop offset="1" stop-color="#043b54"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3d29b"/>
+      <stop offset="1" stop-color="#c98758"/>
+    </linearGradient>
+    <radialGradient id="sunGlow">
+      <stop offset="0" stop-color="#fff3b0" stop-opacity=".95"/>
+      <stop offset=".55" stop-color="#ffd36b" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#ffd36b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#00131f" flood-opacity=".45"/></filter>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#sky)"/>
+  <circle cx="1000" cy="85" r="110" fill="url(#sunGlow)" filter="url(#soft)"/>
+  <circle cx="1000" cy="85" r="32" fill="#ffe7a0"/>
+
+  <!-- distant birds -->
+  <path d="M840 80 q14-14 28 0 q14-14 28 0" fill="none" stroke="#d9f4f4" stroke-width="4" stroke-linecap="round" opacity=".65"/>
+  <path d="M760 112 q10-10 20 0 q10-10 20 0" fill="none" stroke="#d9f4f4" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+
+  <!-- tiny drone -->
+  <g transform="translate(170 72)" stroke="#e7fbff" stroke-width="4" stroke-linecap="round" fill="none" opacity=".88">
+    <path d="M-12 0h24M0-6v12M-12 0l-22-12M12 0l22-12M-12 0l-22 12M12 0l22 12"/>
+    <ellipse cx="-36" cy="-13" rx="14" ry="4"><animateTransform attributeName="transform" type="rotate" from="0 -36 -13" to="360 -36 -13" dur=".7s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="36" cy="-13" rx="14" ry="4"><animateTransform attributeName="transform" type="rotate" from="0 36 -13" to="-360 36 -13" dur=".7s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="-36" cy="13" rx="14" ry="4"><animateTransform attributeName="transform" type="rotate" from="0 -36 13" to="-360 -36 13" dur=".7s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="36" cy="13" rx="14" ry="4"><animateTransform attributeName="transform" type="rotate" from="0 36 13" to="360 36 13" dur=".7s" repeatCount="indefinite"/></ellipse>
+    <animateTransform attributeName="transform" type="translate" values="170 72;170 66;170 72" dur="3s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- sea -->
+  <path d="M0 175 C150 145 265 190 405 165 C575 135 695 192 845 162 C1010 130 1110 165 1200 150 L1200 360 L0 360Z" fill="url(#sea)"/>
+  <path d="M0 182 C150 150 270 198 410 172 C570 142 700 198 850 170 C1000 143 1115 175 1200 160" fill="none" stroke="#8ee8ea" stroke-width="5" opacity=".55">
+    <animate attributeName="d" dur="7s" repeatCount="indefinite"
+      values="M0 182 C150 150 270 198 410 172 C570 142 700 198 850 170 C1000 143 1115 175 1200 160;
+              M0 175 C150 205 270 154 410 182 C570 210 700 153 850 180 C1000 208 1115 160 1200 174;
+              M0 182 C150 150 270 198 410 172 C570 142 700 198 850 170 C1000 143 1115 175 1200 160"/>
+  </path>
+
+  <!-- beach -->
+  <path d="M880 255 C970 205 1070 210 1200 190 L1200 360 L875 360 C920 330 930 290 880 255Z" fill="url(#sand)"/>
+  <path d="M890 258 C970 220 1080 220 1200 202" fill="none" stroke="#fff5d7" stroke-width="12" opacity=".68"/>
+
+  <!-- manta ray -->
+  <g transform="translate(395 252)" filter="url(#shadow)">
+    <path d="M0 8 C-48-40-110-25-142 10 C-92 3-73 28-38 37 C-18 43-10 31 0 24 C10 31 18 43 38 37 C73 28 92 3 142 10 C110-25 48-40 0 8Z" fill="#102b42" stroke="#79d7df" stroke-width="3"/>
+    <path d="M0 21 C4 45 4 62 0 78" stroke="#79d7df" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="-18" cy="14" rx="3.5" ry="2.5" fill="#b8f5f1"/>
+    <ellipse cx="18" cy="14" rx="3.5" ry="2.5" fill="#b8f5f1"/>
+    <animateTransform attributeName="transform" type="translate" values="395 252;420 240;395 252" dur="7s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- turtle -->
+  <g transform="translate(705 295)" filter="url(#shadow)">
+    <ellipse cx="0" cy="0" rx="42" ry="25" fill="#3e8f70" stroke="#b9e8aa" stroke-width="3"/>
+    <path d="M-22-15 Q0-28 22-15 Q30 0 22 15 Q0 28-22 15 Q-30 0-22-15Z" fill="#67aa75" opacity=".8"/>
+    <circle cx="49" cy="-2" r="12" fill="#69ad86"/>
+    <path d="M-20-18l-28-18M-20 18l-28 18M22-18l25-17M22 18l25 17" stroke="#69ad86" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="53" cy="-5" r="2.3" fill="#102b42"/>
+    <animateTransform attributeName="transform" type="translate" values="705 295;675 286;705 295" dur="9s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- fish school -->
+  <g fill="#ffd27a" opacity=".92">
+    <g><path d="M540 214 q18-14 34 0 q-16 14-34 0l-12 10v-20z"/><animateTransform attributeName="transform" type="translate" values="0 0;80 -12;0 0" dur="8s" repeatCount="indefinite"/></g>
+    <g transform="translate(70 28) scale(.7)"><path d="M540 214 q18-14 34 0 q-16 14-34 0l-12 10v-20z"/><animateTransform attributeName="transform" type="translate" values="0 0;95 5;0 0" dur="10s" repeatCount="indefinite"/></g>
+    <g transform="translate(-80 62) scale(.55)"><path d="M540 214 q18-14 34 0 q-16 14-34 0l-12 10v-20z"/><animateTransform attributeName="transform" type="translate" values="0 0;75 -8;0 0" dur="9s" repeatCount="indefinite"/></g>
+  </g>
+
+  <!-- coral -->
+  <g transform="translate(85 322)" stroke-linecap="round" fill="none" opacity=".9">
+    <path d="M0 30v-45m0 18l-22-20m22 8l18-28m-3 50l24-20" stroke="#ff8e87" stroke-width="9"/>
+    <path d="M52 30v-34m0 15l-18-14m18 4l15-18" stroke="#f0b36e" stroke-width="8"/>
+  </g>
+
+  <!-- bubbles -->
+  <g fill="none" stroke="#c9fbff" stroke-width="2" opacity=".45">
+    <circle cx="250" cy="320" r="7"><animate attributeName="cy" values="320;205" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;.65;0" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="280" cy="335" r="4"><animate attributeName="cy" values="335;220" dur="4.3s" begin=".8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".1;.6;0" dur="4.3s" begin=".8s" repeatCount="indefinite"/></circle>
+    <circle cx="820" cy="335" r="6"><animate attributeName="cy" values="335;210" dur="5.6s" begin=".3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".1;.55;0" dur="5.6s" begin=".3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <text x="70" y="125" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="35" fill="#e7fbff" font-weight="700" letter-spacing="2">STILL EXPLORING</text>
+  <text x="72" y="156" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#a9e7e8" letter-spacing="3">BUILD · FLY · LEARN · WANDER</text>
+</svg>

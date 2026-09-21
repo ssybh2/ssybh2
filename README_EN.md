@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/ocean-dream.svg" width="100%" alt="Teddy's animated ocean banner">
+<img src="./assets/starry-night.svg" width="100%" alt="Teddy's animated starry-night banner">
 
 # Hi, I'm Teddy 👋
 
@@ -13,7 +13,7 @@ but keeps building, testing, learning, and flying along the way.
 
 [**中文**](./README.md) · [**English**](./README_EN.md)
 
-<img src="./assets/ocean-stickers.svg" width="100%" alt="Ocean stickers">
+<img src="./assets/paint-particles.svg" width="100%" alt="Animated painterly particles">
 
 </div>
 
@@ -75,9 +75,18 @@ I enjoy building an aircraft step by step from the ground up.
 
 ### 🧰 Things I play with
 
-<img src="https://skillicons.dev/icons?i=python,cpp,pytorch,opencv,linux,git,github,vscode&perline=8" alt="Selected tools" />
+<p align="center">
+  <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/>
+  <img src="https://img.shields.io/badge/Isaac%20Sim-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="Isaac Sim"/>
+  <img src="https://img.shields.io/badge/Douyin-111111?style=for-the-badge&logo=tiktok&logoColor=white" alt="Douyin"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=111111" alt="Linux"/>
+  <img src="https://img.shields.io/badge/ROS%202-22314E?style=for-the-badge&logo=ros&logoColor=white" alt="ROS 2"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
+</p>
 
-<sub>I do not want this page to feel like a résumé — just a few tools I often use to build things.</sub>
+<sub>A mix of tools, platforms, and places where I find inspiration.</sub>
 
 </div>
 

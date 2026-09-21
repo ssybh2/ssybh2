@@ -6,7 +6,7 @@
 
 ### ✈️ Aerospace Engineering @ UNNC
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1200&color=58C7E8&center=true&vCenter=true&width=720&lines=Drone+Racing;Reinforcement+Learning;Embodied+Intelligence;UAV+R%26D;Still+Exploring...)](https://github.com/DenverCoder1/readme-typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1200&color=F0C65A&center=true&vCenter=true&width=720&lines=Drone+Racing;Reinforcement+Learning;Embodied+Intelligence;UAV+R%26D;Still+Exploring...)](https://github.com/DenverCoder1/readme-typing-svg)
 
 A young explorer who is still figuring out where he is heading —  
 but keeps building, testing, learning, and flying along the way.

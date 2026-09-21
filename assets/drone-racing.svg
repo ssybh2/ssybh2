@@ -1,141 +1,195 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-label="FPV racing quad flying through neon gates">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-label="Animated FPV racing quad flying through neon gates">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#050812"/>
-    <stop offset=".45" stop-color="#0a1530"/>
-    <stop offset="1" stop-color="#061018"/>
+    <stop offset="0" stop-color="#040711"/>
+    <stop offset=".48" stop-color="#09152f"/>
+    <stop offset="1" stop-color="#051019"/>
   </linearGradient>
-  <linearGradient id="cyan" x1="0" x2="1"><stop stop-color="#3ff5ff"/><stop offset="1" stop-color="#4d79ff"/></linearGradient>
-  <linearGradient id="mag" x1="0" x2="1"><stop stop-color="#ff3fd2"/><stop offset="1" stop-color="#ff6b6b"/></linearGradient>
-  <filter id="glowC"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000" flood-opacity=".55"/></filter>
-  <clipPath id="r"><rect width="1200" height="340" rx="28"/></clipPath>
+  <linearGradient id="cyan" x1="0" x2="1">
+    <stop stop-color="#36f0ff"/><stop offset="1" stop-color="#4c73ff"/>
+  </linearGradient>
+  <linearGradient id="mag" x1="0" x2="1">
+    <stop stop-color="#ff41d0"/><stop offset="1" stop-color="#ff6a72"/>
+  </linearGradient>
+  <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="shadow" x="-30%" y="-30%" width="180%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000" flood-opacity=".58"/>
+  </filter>
+  <clipPath id="clip"><rect width="1200" height="340" rx="28"/></clipPath>
 </defs>
-<g clip-path="url(#r)">
+
+<g clip-path="url(#clip)">
   <rect width="1200" height="340" fill="url(#bg)"/>
 
-  <!-- speed streaks -->
-  <g stroke-linecap="round" opacity=".55">
-    <path d="M0 82 L325 120" stroke="#2ecfe0" stroke-width="3"><animate attributeName="x2" values="325;520;325" dur="2.6s" repeatCount="indefinite"/></path>
-    <path d="M0 116 L280 137" stroke="#665cff" stroke-width="2"/>
-    <path d="M0 255 L350 226" stroke="#ff48cb" stroke-width="3"/>
-    <path d="M0 288 L290 250" stroke="#ff7c7c" stroke-width="2"/>
-    <path d="M960 46 L1200 15" stroke="#4be6ff" stroke-width="2"/>
-    <path d="M1000 294 L1200 328" stroke="#ff4ed2" stroke-width="2"/>
+  <!-- animated optical-flow streaks: far layer -->
+  <g stroke-linecap="round" opacity=".26">
+    <g>
+      <line x1="-160" y1="74" x2="70" y2="100" stroke="#46eaff" stroke-width="2"/>
+      <line x1="-120" y1="122" x2="120" y2="140" stroke="#7268ff" stroke-width="2"/>
+      <line x1="-180" y1="250" x2="95" y2="226" stroke="#ff49cb" stroke-width="2"/>
+      <line x1="-140" y1="293" x2="120" y2="258" stroke="#ff7b7b" stroke-width="2"/>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="620 0" dur="1.55s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(420 0)">
+      <line x1="-160" y1="62" x2="90" y2="88" stroke="#46eaff" stroke-width="2"/>
+      <line x1="-130" y1="154" x2="120" y2="166" stroke="#6d69ff" stroke-width="2"/>
+      <line x1="-170" y1="278" x2="90" y2="245" stroke="#ff49cb" stroke-width="2"/>
+      <animateTransform attributeName="transform" additive="sum" type="translate" from="0 0" to="620 0" dur="1.55s" begin=".48s" repeatCount="indefinite"/>
+    </g>
   </g>
 
-  <!-- racing gates in perspective -->
-  <g fill="none" filter="url(#glowC)">
-    <path d="M880 58 L1110 76 L1092 273 L858 251 Z" stroke="url(#mag)" stroke-width="11" opacity=".9"/>
-    <path d="M720 86 L852 96 L843 225 L708 213 Z" stroke="url(#cyan)" stroke-width="8" opacity=".82"/>
-    <path d="M612 111 L692 116 L687 198 L605 192 Z" stroke="url(#mag)" stroke-width="6" opacity=".68"/>
+  <!-- animated optical-flow streaks: near layer -->
+  <g stroke-linecap="round" opacity=".62">
+    <g>
+      <line x1="-220" y1="92" x2="100" y2="126" stroke="#4df0ff" stroke-width="4"/>
+      <line x1="-210" y1="207" x2="120" y2="205" stroke="#9f65ff" stroke-width="3"/>
+      <line x1="-230" y1="304" x2="115" y2="260" stroke="#ff4ed0" stroke-width="4"/>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="780 0" dur=".82s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(500 0)">
+      <line x1="-220" y1="45" x2="90" y2="80" stroke="#4df0ff" stroke-width="3"/>
+      <line x1="-215" y1="171" x2="105" y2="178" stroke="#8670ff" stroke-width="3"/>
+      <line x1="-225" y1="286" x2="110" y2="247" stroke="#ff647f" stroke-width="3"/>
+      <animateTransform attributeName="transform" additive="sum" type="translate" from="0 0" to="780 0" dur=".82s" begin=".27s" repeatCount="indefinite"/>
+    </g>
   </g>
 
-  <!-- floor course -->
-  <path d="M590 340 L690 198 L843 225 L1092 273 L1200 340 Z" fill="#07141f" opacity=".9"/>
-  <path d="M668 340 L728 227" stroke="#24dce8" stroke-width="3" opacity=".45"/>
-  <path d="M880 340 L865 247" stroke="#ff46c7" stroke-width="3" opacity=".42"/>
-
-  <!-- FPV racing quad, banked -->
-  <g transform="translate(390 174) rotate(-14)" filter="url(#shadow)">
-    <!-- carbon X frame -->
-    <g fill="#10151b" stroke="#4b535c" stroke-width="3">
-      <path d="M-34-15 L-128-72 L-114-92 L-18-36 Z"/>
-      <path d="M34-15 L128-72 L114-92 L18-36 Z"/>
-      <path d="M-34 15 L-128 72 L-114 92 L-18 36 Z"/>
-      <path d="M34 15 L128 72 L114 92 L18 36 Z"/>
-    </g>
-
-    <!-- motors -->
-    <g fill="#242b33" stroke="#7a8791" stroke-width="3">
-      <circle cx="-124" cy="-82" r="16"/><circle cx="124" cy="-82" r="16"/>
-      <circle cx="-124" cy="82" r="16"/><circle cx="124" cy="82" r="16"/>
-    </g>
-
-    <!-- high-speed 3-blade FPV propellers -->
-    <g opacity=".96">
-      <!-- front-left -->
-      <g transform="translate(-124 -82)">
-        <ellipse rx="61" ry="17" fill="none" stroke="#57f4ff" stroke-width="2.5" opacity=".18"/>
-        <g fill="#57f4ff" stroke="#b8fbff" stroke-width="1.2">
-          <path d="M3-5 C23-13 45-13 60-6 C44 2 25 6 6 5 C1 4-1 0 3-5Z"/>
-          <path d="M3-5 C23-13 45-13 60-6 C44 2 25 6 6 5 C1 4-1 0 3-5Z" transform="rotate(120)"/>
-          <path d="M3-5 C23-13 45-13 60-6 C44 2 25 6 6 5 C1 4-1 0 3-5Z" transform="rotate(240)"/>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur=".16s" repeatCount="indefinite"/>
-        </g>
-        <circle r="8" fill="#27313a" stroke="#8ca0ad" stroke-width="2"/>
-      </g>
-
-      <!-- front-right -->
-      <g transform="translate(124 -82)">
-        <ellipse rx="61" ry="17" fill="none" stroke="#ff58d7" stroke-width="2.5" opacity=".18"/>
-        <g fill="#ff58d7" stroke="#ffc0ef" stroke-width="1.2">
-          <path d="M3-5 C23-13 45-13 60-6 C44 2 25 6 6 5 C1 4-1 0 3-5Z"/>
-          <path d="M3-5 C23-13 45-13 60-6 C44 2 25 6 6 5 C1 4-1 0 3-5Z" transform="rotate(120)"/>
-          <path d="M3-5 C23-13 45-13 60-6 C44 2 25 6 6 5 C1 4-1 0 3-5Z" transform="rotate(240)"/>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur=".16s" repeatCount="indefinite"/>
-        </g>
-        <circle r="8" fill="#27313a" stroke="#8ca0ad" stroke-width="2"/>
-      </g>
-
-      <!-- rear-left -->
-      <g transform="translate(-124 82)">
-        <ellipse rx="61" ry="17" fill="none" stroke="#ff58d7" stroke-width="2.5" opacity=".18"/>
-        <g fill="#ff58d7" stroke="#ffc0ef" stroke-width="1.2">
-          <path d="M3-5 C23-13 45-13 60-6 C44 2 25 6 6 5 C1 4-1 0 3-5Z"/>
-          <path d="M3-5 C23-13 45-13 60-6 C44 2 25 6 6 5 C1 4-1 0 3-5Z" transform="rotate(120)"/>
-          <path d="M3-5 C23-13 45-13 60-6 C44 2 25 6 6 5 C1 4-1 0 3-5Z" transform="rotate(240)"/>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur=".16s" repeatCount="indefinite"/>
-        </g>
-        <circle r="8" fill="#27313a" stroke="#8ca0ad" stroke-width="2"/>
-      </g>
-
-      <!-- rear-right -->
-      <g transform="translate(124 82)">
-        <ellipse rx="61" ry="17" fill="none" stroke="#57f4ff" stroke-width="2.5" opacity=".18"/>
-        <g fill="#57f4ff" stroke="#b8fbff" stroke-width="1.2">
-          <path d="M3-5 C23-13 45-13 60-6 C44 2 25 6 6 5 C1 4-1 0 3-5Z"/>
-          <path d="M3-5 C23-13 45-13 60-6 C44 2 25 6 6 5 C1 4-1 0 3-5Z" transform="rotate(120)"/>
-          <path d="M3-5 C23-13 45-13 60-6 C44 2 25 6 6 5 C1 4-1 0 3-5Z" transform="rotate(240)"/>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur=".16s" repeatCount="indefinite"/>
-        </g>
-        <circle r="8" fill="#27313a" stroke="#8ca0ad" stroke-width="2"/>
-      </g>
-    </g>
-
-    <!-- body stack -->
-    <rect x="-52" y="-34" width="104" height="68" rx="14" fill="#171d24" stroke="#67737e" stroke-width="3"/>
-    <rect x="-38" y="-22" width="76" height="18" rx="6" fill="#272f38"/>
-    <rect x="-30" y="-51" width="60" height="23" rx="7" fill="#252c34" stroke="#697580" stroke-width="2"/>
-
-    <!-- top battery -->
-    <rect x="-40" y="-70" width="80" height="22" rx="6" fill="#3a3f45" stroke="#8b949e" stroke-width="2"/>
-    <path d="M-20-59 H18" stroke="#efb13d" stroke-width="5" stroke-linecap="round"/>
-
-    <!-- FPV camera -->
-    <path d="M42 -20 L74 -13 L74 13 L42 20 Z" fill="#20262d" stroke="#697580" stroke-width="2"/>
-    <circle cx="70" cy="0" r="9" fill="#090c10" stroke="#46eaf5" stroke-width="3"/>
-    <circle cx="70" cy="0" r="3" fill="#83fbff"/>
-
-    <!-- antenna -->
-    <path d="M-28-48 C-42-72-48-90-43-104 M28-48 C43-72 47-89 42-104" fill="none" stroke="#d9dfe5" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="-43" cy="-106" r="4" fill="#ff4ed3"/><circle cx="42" cy="-106" r="4" fill="#55eaff"/>
-
-    <animateTransform attributeName="transform" additive="sum" type="translate"
-      values="0 0;28 -10;10 8;-22 6;0 0"
-      keyTimes="0;0.25;0.5;0.75;1"
-      calcMode="spline"
-      keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"
-      dur="8.8s" repeatCount="indefinite"/>
-  </g>
-
-  <!-- trail -->
-  <g fill="none" stroke-linecap="round" opacity=".5">
-    <path d="M125 185 C190 175 238 181 285 194" stroke="#56ebff" stroke-width="5" stroke-dasharray="20 14">
-      <animate attributeName="stroke-dashoffset" values="0;-68" dur="1.5s" repeatCount="indefinite"/>
+  <!-- neon racing gates -->
+  <g fill="none" filter="url(#glow)">
+    <path d="M884 56 L1116 75 L1096 275 L860 251 Z" stroke="url(#mag)" stroke-width="11" opacity=".9">
+      <animate attributeName="opacity" values=".72;1;.72" dur="2.4s" repeatCount="indefinite"/>
     </path>
-    <path d="M115 210 C190 198 240 205 300 222" stroke="#ff4ecb" stroke-width="4" stroke-dasharray="18 12">
-      <animate attributeName="stroke-dashoffset" values="0;-60" dur="1.3s" repeatCount="indefinite"/>
+    <path d="M722 86 L854 96 L844 226 L708 213 Z" stroke="url(#cyan)" stroke-width="8" opacity=".84">
+      <animate attributeName="opacity" values=".62;.95;.62" dur="2s" begin=".35s" repeatCount="indefinite"/>
+    </path>
+    <path d="M612 111 L692 116 L687 198 L605 192 Z" stroke="url(#mag)" stroke-width="6" opacity=".7">
+      <animate attributeName="opacity" values=".5;.85;.5" dur="1.7s" begin=".18s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- course floor and moving perspective flow -->
+  <path d="M590 340 L690 198 L844 226 L1096 275 L1200 340 Z" fill="#06141e" opacity=".93"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M650 340 L718 226" stroke="#28dfe9" stroke-width="3" opacity=".44" stroke-dasharray="18 16">
+      <animate attributeName="stroke-dashoffset" values="0;-68" dur=".72s" repeatCount="indefinite"/>
+    </path>
+    <path d="M780 340 L790 236" stroke="#6d66ff" stroke-width="2.5" opacity=".36" stroke-dasharray="15 14">
+      <animate attributeName="stroke-dashoffset" values="0;-58" dur=".66s" repeatCount="indefinite"/>
+    </path>
+    <path d="M900 340 L870 250" stroke="#ff48c8" stroke-width="3" opacity=".42" stroke-dasharray="18 16">
+      <animate attributeName="stroke-dashoffset" values="0;-70" dur=".69s" repeatCount="indefinite"/>
+    </path>
+    <path d="M1035 340 L994 266" stroke="#ff737a" stroke-width="2.5" opacity=".34" stroke-dasharray="14 13">
+      <animate attributeName="stroke-dashoffset" values="0;-54" dur=".61s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- moving FPV racing quad -->
+  <g id="drone-motion" filter="url(#shadow)">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0 0;30 -12;15 10;-24 6;0 0"
+      keyTimes="0;0.25;0.5;0.75;1"
+      dur="7.8s"
+      repeatCount="indefinite"/>
+
+    <g transform="translate(390 174)">
+      <g transform="rotate(-14)">
+        <!-- carbon frame -->
+        <g fill="#10151b" stroke="#505b65" stroke-width="3">
+          <path d="M-34-15 L-128-72 L-114-92 L-18-36 Z"/>
+          <path d="M34-15 L128-72 L114-92 L18-36 Z"/>
+          <path d="M-34 15 L-128 72 L-114 92 L-18 36 Z"/>
+          <path d="M34 15 L128 72 L114 92 L18 36 Z"/>
+        </g>
+
+        <!-- motors -->
+        <g fill="#252c33" stroke="#87949f" stroke-width="3">
+          <circle cx="-124" cy="-82" r="17"/><circle cx="124" cy="-82" r="17"/>
+          <circle cx="-124" cy="82" r="17"/><circle cx="124" cy="82" r="17"/>
+        </g>
+
+        <!-- front-left prop -->
+        <g transform="translate(-124 -82)">
+          <ellipse rx="63" ry="19" fill="none" stroke="#58f2ff" stroke-width="3" opacity=".20"/>
+          <g fill="#58f2ff" stroke="#c7fbff" stroke-width="1.2">
+            <path d="M3-5 C23-13 46-13 61-6 C45 2 25 7 6 5 C1 4-1 0 3-5Z"/>
+            <path d="M3-5 C23-13 46-13 61-6 C45 2 25 7 6 5 C1 4-1 0 3-5Z" transform="rotate(120)"/>
+            <path d="M3-5 C23-13 46-13 61-6 C45 2 25 7 6 5 C1 4-1 0 3-5Z" transform="rotate(240)"/>
+            <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur=".12s" repeatCount="indefinite"/>
+          </g>
+          <circle r="8" fill="#2b343c" stroke="#9aabb5" stroke-width="2"/>
+        </g>
+
+        <!-- front-right prop -->
+        <g transform="translate(124 -82)">
+          <ellipse rx="63" ry="19" fill="none" stroke="#ff5bd8" stroke-width="3" opacity=".20"/>
+          <g fill="#ff5bd8" stroke="#ffc6ef" stroke-width="1.2">
+            <path d="M3-5 C23-13 46-13 61-6 C45 2 25 7 6 5 C1 4-1 0 3-5Z"/>
+            <path d="M3-5 C23-13 46-13 61-6 C45 2 25 7 6 5 C1 4-1 0 3-5Z" transform="rotate(120)"/>
+            <path d="M3-5 C23-13 46-13 61-6 C45 2 25 7 6 5 C1 4-1 0 3-5Z" transform="rotate(240)"/>
+            <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur=".12s" repeatCount="indefinite"/>
+          </g>
+          <circle r="8" fill="#2b343c" stroke="#9aabb5" stroke-width="2"/>
+        </g>
+
+        <!-- rear-left prop -->
+        <g transform="translate(-124 82)">
+          <ellipse rx="63" ry="19" fill="none" stroke="#ff5bd8" stroke-width="3" opacity=".20"/>
+          <g fill="#ff5bd8" stroke="#ffc6ef" stroke-width="1.2">
+            <path d="M3-5 C23-13 46-13 61-6 C45 2 25 7 6 5 C1 4-1 0 3-5Z"/>
+            <path d="M3-5 C23-13 46-13 61-6 C45 2 25 7 6 5 C1 4-1 0 3-5Z" transform="rotate(120)"/>
+            <path d="M3-5 C23-13 46-13 61-6 C45 2 25 7 6 5 C1 4-1 0 3-5Z" transform="rotate(240)"/>
+            <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur=".12s" repeatCount="indefinite"/>
+          </g>
+          <circle r="8" fill="#2b343c" stroke="#9aabb5" stroke-width="2"/>
+        </g>
+
+        <!-- rear-right prop -->
+        <g transform="translate(124 82)">
+          <ellipse rx="63" ry="19" fill="none" stroke="#58f2ff" stroke-width="3" opacity=".20"/>
+          <g fill="#58f2ff" stroke="#c7fbff" stroke-width="1.2">
+            <path d="M3-5 C23-13 46-13 61-6 C45 2 25 7 6 5 C1 4-1 0 3-5Z"/>
+            <path d="M3-5 C23-13 46-13 61-6 C45 2 25 7 6 5 C1 4-1 0 3-5Z" transform="rotate(120)"/>
+            <path d="M3-5 C23-13 46-13 61-6 C45 2 25 7 6 5 C1 4-1 0 3-5Z" transform="rotate(240)"/>
+            <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur=".12s" repeatCount="indefinite"/>
+          </g>
+          <circle r="8" fill="#2b343c" stroke="#9aabb5" stroke-width="2"/>
+        </g>
+
+        <!-- stack / battery -->
+        <rect x="-52" y="-34" width="104" height="68" rx="14" fill="#171d24" stroke="#6c7882" stroke-width="3"/>
+        <rect x="-38" y="-22" width="76" height="18" rx="6" fill="#29313a"/>
+        <rect x="-31" y="-52" width="62" height="24" rx="7" fill="#252c34" stroke="#73808b" stroke-width="2"/>
+        <rect x="-41" y="-72" width="82" height="23" rx="6" fill="#3a4046" stroke="#969fa7" stroke-width="2"/>
+        <path d="M-20-60 H18" stroke="#efb13d" stroke-width="5" stroke-linecap="round"/>
+
+        <!-- FPV camera -->
+        <path d="M42 -20 L75 -13 L75 13 L42 20 Z" fill="#20262d" stroke="#727f89" stroke-width="2"/>
+        <circle cx="71" cy="0" r="9" fill="#090c10" stroke="#46eaf5" stroke-width="3"/>
+        <circle cx="71" cy="0" r="3" fill="#92fbff">
+          <animate attributeName="opacity" values=".55;1;.55" dur=".9s" repeatCount="indefinite"/>
+        </circle>
+
+        <!-- antenna -->
+        <path d="M-28-48 C-42-72-48-90-43-104 M28-48 C43-72 47-89 42-104" fill="none" stroke="#d9dfe5" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="-43" cy="-106" r="4" fill="#ff4ed3"/>
+        <circle cx="42" cy="-106" r="4" fill="#55eaff"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- animated wake trails behind drone -->
+  <g fill="none" stroke-linecap="round" opacity=".58">
+    <path d="M90 182 C175 170 240 177 305 194" stroke="#59edff" stroke-width="5" stroke-dasharray="24 15">
+      <animate attributeName="stroke-dashoffset" values="0;-78" dur=".58s" repeatCount="indefinite"/>
+    </path>
+    <path d="M80 214 C171 199 242 207 312 228" stroke="#ff50c9" stroke-width="4" stroke-dasharray="22 14">
+      <animate attributeName="stroke-dashoffset" values="0;-72" dur=".52s" repeatCount="indefinite"/>
     </path>
   </g>
 

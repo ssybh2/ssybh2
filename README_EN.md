@@ -85,6 +85,18 @@ I enjoy building an aircraft step by step from the ground up.
 
 <div align="center">
 
+### 🌊 GitHub in motion
+
+<img src="./profile-3d-contrib/profile-season-animate.svg" width="100%" alt="Animated 3D contribution landscape">
+
+<sub>A tiny landscape grown from my GitHub activity.</sub>
+
+</div>
+
+---
+
+<div align="center">
+
 ### 🌌 Still exploring.
 
 Maybe I do not need to have the final answer yet.  

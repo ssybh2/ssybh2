@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 150" role="img" aria-label="Hi, I'm Teddy">
+  <defs>
+    <linearGradient id="nameGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#79d7ff">
+        <animate attributeName="stop-color" values="#79d7ff;#f2c86b;#ff8fb8;#79d7ff" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="48%" stop-color="#f4e4a2">
+        <animate attributeName="stop-color" values="#f4e4a2;#9de5ff;#f6c66d;#f4e4a2" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#ff8fb8">
+        <animate attributeName="stop-color" values="#ff8fb8;#7fd8ff;#f0bd63;#ff8fb8" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="brush" x1="0" x2="1">
+      <stop offset="0" stop-color="#4dc9ff"/>
+      <stop offset=".55" stop-color="#f1c45c"/>
+      <stop offset="1" stop-color="#ff79a9"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-50%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g transform="translate(450 75)">
+    <text x="-300" y="-8"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="30"
+          font-weight="600"
+          letter-spacing="4.5"
+          fill="#9fb4d7">Hi, I'm</text>
+
+    <text x="-75" y="7"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="74"
+          font-style="italic"
+          font-weight="700"
+          letter-spacing="1.2"
+          fill="url(#nameGradient)"
+          filter="url(#softGlow)">Teddy</text>
+
+    <path d="M-77 27 C6 42 105 41 188 24"
+          fill="none"
+          stroke="url(#brush)"
+          stroke-width="5"
+          stroke-linecap="round"
+          opacity=".92">
+      <animate attributeName="d"
+               values="M-77 27 C6 42 105 41 188 24;
+                       M-77 30 C10 48 106 34 188 27;
+                       M-77 27 C6 42 105 41 188 24"
+               dur="6.5s"
+               repeatCount="indefinite"/>
+    </path>
+
+    <g transform="translate(218 -28)" fill="#ffd976" stroke="#ffe7a8" stroke-linecap="round" filter="url(#softGlow)">
+      <circle r="4.5"/>
+      <path d="M0-14V14M-14 0H14M-9-9L9 9M9-9L-9 9" stroke-width="2.2"/>
+      <animateTransform attributeName="transform" additive="sum" type="scale" values=".82;1.16;.82" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".55;1;.55" dur="2.8s" repeatCount="indefinite"/>
+    </g>
+
+    <g transform="translate(256 8)" fill="#80dfff" opacity=".85">
+      <circle r="3.2">
+        <animate attributeName="r" values="2.2;4.2;2.2" dur="3.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+</svg>

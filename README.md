@@ -13,7 +13,7 @@
 
 [**中文**](./README.md) · [**English**](./README_EN.md)
 
-<img src="./assets/paint-particles.svg" width="100%" alt="Animated painterly particles">
+<img src="./assets/ocean-current.svg" width="100%" alt="Animated ocean current">
 
 </div>
 
@@ -94,21 +94,13 @@
 
 <div align="center">
 
-### 🌊 GitHub in motion
+### 🏁 Drone Racing
 
-<img src="./profile-3d-contrib/profile-season-animate.svg" width="100%" alt="Animated 3D contribution landscape">
+<a href="https://github.com/ssybh2/isaac_drone_racer">
+  <img src="./assets/drone-racing.svg" width="100%" alt="Animated FPV racing quad flying through gates">
+</a>
 
-<sub>把提交记录变成一小片会生长的风景。</sub>
-
-<br><br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./images/breakout-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./images/breakout-light.svg">
-  <img src="./images/breakout-light.svg" width="100%" alt="Contribution breakout animation">
-</picture>
-
-<sub>再让这些贡献方块偶尔变成一场小游戏。</sub>
+<sub>竞速穿越机不是“普通四旋翼”——它更像是在速度、视觉和控制极限之间不断做选择。</sub>
 
 </div>
 

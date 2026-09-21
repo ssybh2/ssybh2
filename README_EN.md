@@ -20,7 +20,7 @@ I am also a researcher at the [**UNNC Control Systems Lab**](https://github.com/
 
 <div align="center">
   <a href="https://github.com/ControlSystemLab-UNNC">
-    <img src="https://cdn.jsdelivr.net/gh/ssybh2/ssybh2@main/assets/lab-profile-card-v2.jpg" width="320" alt="UNNC Control Systems Lab profile">
+    <img src="https://cdn.jsdelivr.net/gh/ssybh2/ssybh2@3d3fddd996d71459e3397bfc46eb4209241bfb68/assets/lab-profile-card-v2.jpg" width="320" alt="UNNC Control Systems Lab profile">
   </a>
 </div>
 

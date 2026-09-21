@@ -15,7 +15,8 @@ but keeps building, testing, learning, and flying along the way.
 
 ## 🧭 About Me
 
-I study **Aerospace Engineering at the University of Nottingham Ningbo China (UNNC)**.
+I study **Aerospace Engineering at the University of Nottingham Ningbo China (UNNC)**.  
+I am also a researcher at the [**UNNC Control Systems Lab**](https://github.com/ControlSystemLab-UNNC), exploring and developing ideas in robotics, control, and autonomous systems.
 
 I do not have every part of my future figured out yet.  
 For now, I simply enjoy turning ideas into code, simulations, robots, and machines that can actually fly.

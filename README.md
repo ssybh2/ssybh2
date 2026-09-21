@@ -2,11 +2,7 @@
 
 <img src="./assets/starry-night.svg" width="100%" alt="Teddy's animated starry-night banner">
 
-<img src="./assets/hi-teddy.svg" width="64%" alt="Hi, I'm Teddy">
-
-### ✈️ Aerospace Engineering @ UNNC
-
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1200&color=F0C65A&center=true&vCenter=true&width=720&lines=Drone+Racing;Reinforcement+Learning;Embodied+Intelligence;UAV+R%26D;Still+Exploring...)](https://github.com/DenverCoder1/readme-typing-svg)
+<img src="./assets/hi-teddy.svg" width="90%" alt="Hi, I'm Teddy — Aerospace Engineering at UNNC">
 
 一个还在寻找方向、但一直在动手探索的迷茫青年。  
 喜欢让机器 **飞起来、动起来，也学会自己做决定**。

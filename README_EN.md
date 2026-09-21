@@ -13,7 +13,7 @@ but keeps building, testing, learning, and flying along the way.
 
 [**中文**](./README.md) · [**English**](./README_EN.md)
 
-<img src="./assets/paint-particles.svg" width="100%" alt="Animated painterly particles">
+<img src="./assets/ocean-current.svg" width="100%" alt="Animated ocean current">
 
 </div>
 
@@ -94,21 +94,13 @@ I enjoy building an aircraft step by step from the ground up.
 
 <div align="center">
 
-### 🌊 GitHub in motion
+### 🏁 Drone Racing
 
-<img src="./profile-3d-contrib/profile-season-animate.svg" width="100%" alt="Animated 3D contribution landscape">
+<a href="https://github.com/ssybh2/isaac_drone_racer">
+  <img src="./assets/drone-racing.svg" width="100%" alt="Animated FPV racing quad flying through gates">
+</a>
 
-<sub>A tiny landscape grown from my GitHub activity.</sub>
-
-<br><br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./images/breakout-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./images/breakout-light.svg">
-  <img src="./images/breakout-light.svg" width="100%" alt="Contribution breakout animation">
-</picture>
-
-<sub>And sometimes the contribution grid turns into a tiny game.</sub>
+<sub>FPV racing is where speed, perception, control, and commitment meet.</sub>
 
 </div>
 

@@ -15,7 +15,8 @@
 
 ## 🧭 关于我
 
-我就读于 **宁波诺丁汉大学（University of Nottingham Ningbo China）航空航天专业**。
+我就读于 **宁波诺丁汉大学（University of Nottingham Ningbo China）航空航天专业**。  
+同时，我也是 [**UNNC Control Systems Lab · 宁波诺丁汉大学控制系统实验室**](https://github.com/ControlSystemLab-UNNC) 的科研人员，参与机器人、控制与自主系统相关方向的探索与研发。
 
 我还没有完全想清楚未来最终会走向哪里。  
 但目前，我很享受把脑海里的想法变成代码、仿真、机器人和真正能飞起来的东西。

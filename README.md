@@ -75,9 +75,9 @@
 
 ### 🧰 Things I play with
 
-<img src="./assets/things-i-play-with.svg" width="100%" alt="Things I play with">
+<img src="https://skillicons.dev/icons?i=python,cpp,pytorch,opencv,linux,git,github,vscode&perline=8" alt="Selected tools" />
 
-<sub>这里不只放工具，也放我常用的平台和灵感来源。</sub>
+<sub>不想把这里变成一份简历，只放一些我经常拿来“造东西”的工具。</sub>
 
 </div>
 

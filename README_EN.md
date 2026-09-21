@@ -2,7 +2,7 @@
 
 <img src="./assets/starry-night.svg" width="100%" alt="Teddy's animated starry-night banner">
 
-<img src="./assets/hi-teddy.svg" width="72%" alt="Hi, I'm Teddy">
+<img src="./assets/hi-teddy.svg" width="64%" alt="Hi, I'm Teddy">
 
 ### ✈️ Aerospace Engineering @ UNNC
 

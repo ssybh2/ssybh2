@@ -75,9 +75,9 @@ I enjoy building an aircraft step by step from the ground up.
 
 ### 🧰 Things I play with
 
-<img src="./assets/things-i-play-with.svg" width="100%" alt="Things I play with">
+<img src="https://skillicons.dev/icons?i=python,cpp,pytorch,opencv,linux,git,github,vscode&perline=8" alt="Selected tools" />
 
-<sub>A mix of tools, platforms, and places where I find inspiration.</sub>
+<sub>I do not want this page to feel like a résumé — just a few tools I often use to build things.</sub>
 
 </div>
 
